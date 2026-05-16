@@ -4,7 +4,7 @@ Exported by Agent Collaboration Platform.
 
 - Marketplace: `marketing-marketplace`
 - Plugin: `marketing` v0.1.0-20260516
-- 2 agents · 8 custom skills · 2 MCP connectors · 1 knowledge base
+- 2 agents · 8 custom skills · 2 commands · 2 MCP connectors · 1 knowledge base
 
 ## Install
 
