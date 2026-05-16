@@ -3,24 +3,50 @@
 Exported by Agent Collaboration Platform.
 
 - Marketplace: `marketing-marketplace`
-- Plugin: `marketing` v0.1.0-20260516
+- Plugin: `marketing` v1.0.0
 - 2 agents · 8 custom skills · 2 commands · 2 MCP connectors · 1 knowledge base
 
 ## Install
 
-Push this repo to GitHub, then in Claude Cowork / Claude Code:
+Two surfaces, same artifact: install via slash commands in Claude Code /
+Cowork, or via the GUI in Claude Desktop. Both pull from this repo.
+
+### Claude Code / Cowork (CLI)
+
+From this repo:
 
 ```
 /plugin marketplace add <you>/<repo>
 /plugin install marketing@marketing-marketplace
 ```
 
-Or test locally:
+Or locally (point at this folder on disk):
 
 ```
 /plugin marketplace add /absolute/path/to/this/folder
 /plugin install marketing@marketing-marketplace
 ```
+
+### Claude Desktop (GUI)
+
+**Option 1 — from this repo:** Customize → **+** Personal plugins →
+Create plugin → **Add marketplace** → paste `<you>/<repo>`.
+
+**Option 2 — from a downloaded zip:** on the platform's Distribution
+page, grab the **Plugin zip (for Desktop Upload)** — *not* the
+Marketplace zip. Desktop's Upload flow expects a plugin shape (skills
+/ .mcp.json at the zip root), not a marketplace wrapper. Then
+Customize → **+** Personal plugins → Create plugin → **Upload plugin**
+→ pick the `.zip`. No GitHub needed.
+
+_Caveat: Desktop installs the **Skills** and **Connectors** (MCP) from
+this bundle. Agents and slash commands run in Claude Code / Cowork; in
+Desktop they're inert. Knowledge bases are inlined into agent prompts at
+publish time, so they ride along with whichever surface the agent runs on._
+
+Third-party marketplaces in Desktop have auto-update disabled by default —
+toggle it on per-marketplace from the plugin UI to get future pushes
+automatically, otherwise re-add the marketplace to pull fresh.
 
 ## Required environment variables
 
