@@ -1,0 +1,9 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "marketing",
+  "version": "0.1.0-20260516",
+  "description": "Marketing workspace agents and skills.",
+  "author": {
+    "name": "Marketing"
+  }
+}

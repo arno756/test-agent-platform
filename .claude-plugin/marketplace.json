@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-marketplace.json",
+  "name": "marketing-marketplace",
+  "description": "Marketing workspace, exported by Agent Collaboration Platform.",
+  "owner": {
+    "name": "Marketing"
+  },
+  "plugins": [
+    {
+      "name": "marketing",
+      "source": "./plugins/marketing",
+      "description": "Marketing team plugin — 2 agents.",
+      "version": "0.1.0-20260516",
+      "author": {
+        "name": "Marketing"
+      }
+    }
+  ]
+}

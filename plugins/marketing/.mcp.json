@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "github": {
+      "url": "https://api.githubcopilot.com/mcp",
+      "headers": {
+        "Authorization": "Bearer ${ACP_MCP_GITHUB_TOKEN}"
+      }
+    },
+    "microsoft_learn": {
+      "url": "https://learn.microsoft.com/api/mcp"
+    }
+  }
+}
